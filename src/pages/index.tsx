@@ -14,10 +14,12 @@ import {
 import routes from '@/routes/route';
 import {useRouter} from 'next/router';
 import {GetServerSideProps, GetStaticProps} from 'next';
+import WeatherContainer from '@/components/Weather/WeatherContainer';
 const inter = Inter({subsets: ['latin']});
 
-export default function Home() {
+export default function Home({weather}: {weather: any[]}) {
   const navigateTo = useRouter();
+  console.log(weather);
   return (
     <>
       <Head>
@@ -32,6 +34,29 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Box component={'main'}>
+        <Box
+          component={'div'}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'flex-end',
+          }}
+        >
+          <Typography>Olá Usuári@!</Typography>
+          <Typography>Seja bem vindo</Typography>
+        </Box>
+        <Box
+          component={'div'}
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          <WeatherContainer weather={weather} />
+        </Box>
         <Grid container spacing={1}>
           {routes.map((route) => {
             return (
@@ -72,6 +97,20 @@ export default function Home() {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  return {props: {}};
+  let weather = [];
+  try {
+    const response = await fetch(
+      'https://api-deslocamento.herokuapp.com/api/v1/WeatherForecast',
+      {
+        method: 'GET',
+        headers: {'Content-Type': 'application/json'},
+      },
+    );
+    const json = await response.json();
+    if (json && Array.isArray(json)) {
+      weather = json;
+    }
+  } catch (error) {}
+  return {props: {weather}};
 };
 

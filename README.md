@@ -1,38 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Desafio de Desenvolvimento Front-End - Aplicação de Deslocamento
 
-First, run the development server:
+#Proposta do projeto:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+Desenvolva uma aplicação front-end utilizando ReactJS com TypeScript, utilizando o framework Next.js e a biblioteca Material-UI, que permita aos usuários interagir com a API Deslocamento para realizar operações relacionadas a clientes, condutores, deslocamentos e veículos. A aplicação deve fornecer interfaces para criar, visualizar, atualizar e excluir registros em cada uma dessas entidades, seguindo as melhores práticas e padrões de desenvolvimento.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Requisitos Básicos:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Utilizar o framework Next.js para criar a aplicação ReactJS.
+Utilizar TypeScript para escrever o código da aplicação.
+Implementar uma interface de usuário responsiva e amigável ao usuário, utilizando os componentes e estilos fornecidos pela biblioteca Material-UI.
+Fazer chamadas adequadas às rotas da API Deslocamento, utilizando os comandos correspondentes para realizar as operações necessárias em cada entidade.
+Exibir as informações retornadas pela API de forma clara e legível na interface.
+Implementar a navegação entre as diferentes telas da aplicação, utilizando as funcionalidades oferecidas pelo Next.js.
+## Referencias
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+ - [API Deslocamento](https://swapi.dev/)
+ - [Next.JS](https://nextjs.org/)
+ - [React](https://react.dev/)
+ - [Material UI](https://mui.com/)
+ 
+ 
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Autor
 
-To learn more about Next.js, take a look at the following resources:
+- [@SamuelMBote](https://github.com/SamuelMBote)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🚀 Sobre mim
+About to become a Developer. Starting by Front-End. Brazilian, with a little bit of English and un poco de Español
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠 Habilidades
+Javascript, TypeScript, React, HTML, CSS, SCSS, NPM ...
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Stack
+
+**Front-end:** NextJS, React, Material UI
+
+**Back-end:** API - Deslocamento
+
+
+## Demonstração
+
+Veja o aplicativo rodando em:
+
+https://api-deslocamento-desafio.vercel.app/
+
