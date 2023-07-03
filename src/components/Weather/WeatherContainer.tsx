@@ -14,7 +14,7 @@ const WeatherContainer = ({weather}: {weather: IWeather[]}) => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        spacing={10}
+        spacing={8}
       >
         {weather.map((item) => {
           return (
@@ -22,7 +22,8 @@ const WeatherContainer = ({weather}: {weather: IWeather[]}) => {
               key={`${new Date(item.date)} ${item.temperatureC}`}
               item
               xs={12}
-              md={2}
+              md={4}
+              lg={2}
             >
               <Weather weather={item} />
             </Grid>
